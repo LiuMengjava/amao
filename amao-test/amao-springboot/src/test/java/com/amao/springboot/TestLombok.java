@@ -18,7 +18,7 @@ public class TestLombok {
     // 斐波那契数列
     @Test
     public void recursive(){
-        System.out.println(getSum(24));
+        System.out.println(getSum(10));
     }
 
     public int getSum(int a){
@@ -38,7 +38,7 @@ public class TestLombok {
     }
     @Test
     public  void splitTest(){
-        String str = "EDS自测包-1.0.0.1.zip";
+        String str = "自测包-1.0.0.1.zip";
         System.out.println(str.substring(str.lastIndexOf("-")+1,str.lastIndexOf(".")));
     }
 }
