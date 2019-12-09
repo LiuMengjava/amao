@@ -1,19 +1,10 @@
 package com.amao.springboot;
 
-import com.amao.pojo.OrderDO;
+import com.alibaba.fastjson.JSONObject;
 import org.junit.Test;
 
 
 public class TestLombok {
-    @Test
-    public void pojoTest() {
-        OrderDO orderDO = new OrderDO();
-        orderDO.setDesc("111");
-        Integer a = 12;
-        orderDO.setSe(Boolean.parseBoolean(a+""));
-        //orderDO.setSex(((Boolean) 123));
-        System.out.println(orderDO);
-    }
 
     // 斐波那契数列
     @Test
@@ -40,5 +31,22 @@ public class TestLombok {
     public  void splitTest(){
         String str = "自测包-1.0.0.1.zip";
         System.out.println(str.substring(str.lastIndexOf("-")+1,str.lastIndexOf(".")));
+    }
+    @Test
+    public void testJson(){
+        String str = null;
+        JSONObject jsonObject = JSONObject.parseObject(str);
+        if (jsonObject!=null){
+            System.out.println(1);
+        }else {
+            System.out.println(2);
+        }
+    }
+
+    @Test
+    public void testJson1(){
+        // 空指针
+        Integer a = null;
+        System.out.println(a == null);
     }
 }

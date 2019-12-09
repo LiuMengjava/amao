@@ -1,0 +1,24 @@
+package com.amao.springboot
+import com.amao.springboot.domain.*
+
+dialect  "java"
+rule "Hello World1"
+    when
+        m : Message(status == 0)
+    then
+        System.err.println(m);
+end
+
+rule "rule1"
+    when
+        $d : Double( this == 0)
+    then
+        System.err.println($d);
+end
+
+rule "rule2"
+    when
+        im : Item( itemName == "大保健")
+    then
+        System.err.println(im);
+end
