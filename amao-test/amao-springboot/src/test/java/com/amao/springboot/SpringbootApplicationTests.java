@@ -36,6 +36,7 @@ public class SpringbootApplicationTests {
         KieSession kieSession = kieTemplate.getKieSession("rule1.drl");
         List<Item> items = itemMapper.findAll();
         for (Item item : items) {
+            // 通过规则筛选
             kieSession.insert(item);
             kieSession.fireAllRules();
         }
@@ -48,4 +49,6 @@ public class SpringbootApplicationTests {
         item.setItemPrice(666);
         itemMapper.save(item);
     }
+
+
 }

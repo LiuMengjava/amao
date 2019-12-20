@@ -18,7 +18,7 @@ public class RocketMqProducerClientImpl implements RocketMqProducerClient {
 
     public RocketMqProducerClientImpl(){
         producer = new DefaultMQProducer("producer1");
-        producer.setNamesrvAddr("10.43.104.25:9876");
+        producer.setNamesrvAddr("106.13.180.38:9876");
         try{
             producer.start();
         }catch (MQClientException e){

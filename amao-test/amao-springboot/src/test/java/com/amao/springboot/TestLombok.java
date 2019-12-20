@@ -46,7 +46,13 @@ public class TestLombok {
     @Test
     public void testJson1(){
         // 空指针
+        Integer b =11;
         Integer a = null;
-        System.out.println(a == null);
+        //System.out.println(a == null); //true
+        //System.out.println(a == 111); //空指针
+        //System.out.println(a != 111); //空指针
+        //System.out.println(a != null); // false
+        //System.out.println(a != b); // true
+        //System.out.println(a == b); // false
     }
 }

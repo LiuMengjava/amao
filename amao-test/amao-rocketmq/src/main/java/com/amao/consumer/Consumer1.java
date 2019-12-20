@@ -21,7 +21,7 @@ public class Consumer1 {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("consumer1");
 
         //同样也要设置NameServer地址
-        consumer.setNamesrvAddr("10.43.104.25:9876");
+        consumer.setNamesrvAddr("106.13.180.38:9876");
         consumer.setMessageModel(MessageModel.CLUSTERING);
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
 
