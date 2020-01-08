@@ -12,9 +12,11 @@
         <module>amao-rocketmq</module>
         <module>amao-kafka</module>
         <module>springdemo</module>
+        <module>amao-redis</module>
     </modules>
 
     <properties>
+        <jedis.version>2.7.2</jedis.version>
         <rocketmq-verison>4.3.0</rocketmq-verison>
         <lombok-verison>1.16.22</lombok-verison>
         <spring-kafka-verison>2.2.0.RELEASE</spring-kafka-verison>
@@ -24,6 +26,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>

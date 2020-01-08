@@ -1,8 +1,6 @@
-package com.amao.client;
+package com.amao.springboot.client;
 
-import com.amao.pojo.MqResult;
 import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.common.message.Message;
 
 public interface RocketMqProducerClient {
 
