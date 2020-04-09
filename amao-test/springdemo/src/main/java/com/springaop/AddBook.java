@@ -1,5 +1,5 @@
 package com.springaop;
 
 public interface AddBook {
-    public void addBook();
+    public void addBook(String name);
 }

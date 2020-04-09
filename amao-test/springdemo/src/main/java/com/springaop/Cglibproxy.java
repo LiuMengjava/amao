@@ -35,6 +35,6 @@ public class Cglibproxy implements MethodInterceptor {
     public static void main(String[] args) {
         Cglibproxy cglibproxy = new Cglibproxy();
         AddBookImpl addBook = (AddBookImpl) cglibproxy.getInstance(new AddBookImpl());
-        addBook.addBook();
+        addBook.addBook("六学");
     }
 }
