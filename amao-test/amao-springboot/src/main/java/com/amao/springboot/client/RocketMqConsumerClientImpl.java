@@ -68,7 +68,10 @@ public class RocketMqConsumerClientImpl implements RocketMqConsumerClient {
                 for (MessageExt messageExt : msgs) {
                     // 处理消息
                     ConsumerHanderImpl hander = applicationContext.getBean(TOPIC, ConsumerHanderImpl.class);
-                    hander.doHandler(new Message(new String(messageExt.getBody()),1),messageExt.getMsgId());
+                    Message message = new Message();
+                    message.setMessage(new String(messageExt.getBody()));
+                    message.setStatus(1);
+                    hander.doHandler(message,messageExt.getMsgId());
 //                    String messageBody = new String(messageExt.getBody());
 //                    System.err.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(
 //                            new Date())+"消费响应：msgId : " + messageExt.getMsgId() + ",  msgBody : " + messageBody);//输出消息内容

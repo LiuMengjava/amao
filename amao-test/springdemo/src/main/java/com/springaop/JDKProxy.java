@@ -10,7 +10,7 @@ import java.lang.reflect.Proxy;
  */
 public class JDKProxy implements InvocationHandler {
     private Object ImpClass;
-    private Object IObject;
+    //private Object IObject;
 
     public JDKProxy(Object realObject) {
         this.ImpClass = realObject;
