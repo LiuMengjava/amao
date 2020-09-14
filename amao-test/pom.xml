@@ -112,7 +112,7 @@
         <rocketmq-verison>4.3.0</rocketmq-verison>
         <lombok-verison>1.16.22</lombok-verison>
         <spring-kafka-verison>2.2.0.RELEASE</spring-kafka-verison>
-        <spring-version>5.1.2.RELEASE</spring-version>
+        <spring-version>5.2.3.RELEASE</spring-version>
         <junit-version>4.10</junit-version>
     </properties>
 
