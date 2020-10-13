@@ -113,7 +113,7 @@
         <lombok-verison>1.16.22</lombok-verison>
         <spring-kafka-verison>2.2.0.RELEASE</spring-kafka-verison>
         <spring-version>5.1.2.RELEASE</spring-version>
-        <junit-version>4.10</junit-version>
+        <junit-version>4.13.1</junit-version>
     </properties>
 
     <dependencyManagement>
